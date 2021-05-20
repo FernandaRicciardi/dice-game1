@@ -1,0 +1,99 @@
+body {
+    background-color: #3D348B;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #F7B801;
+    font-family: fantasy;
+}
+
+#container {
+   height: 100vh;
+   position: relative;
+}
+
+#boardgame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 30px 100px;
+    border: 5px solid #F35B04;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#game_result p,
+#score p {
+    margin: 0;
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    display: block;
+}
+
+#score p {
+    font-size: 35px;
+}
+
+/***** BUTTONS *****/
+
+#start_again_btt button,
+#roll_btt button {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f18701;
+    border: 3px solid #f18701;
+    border-radius: 5px;
+    transition: all 0.25s ease;
+}
+
+#start_again_btt button:hover,
+#roll_btt button:hover {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25)
+}
+
+#roll_btt {
+    padding-top: 30px;
+}
+
+#start_again_btt {
+    padding-bottom: 30px;
+    visibility: hidden;
+}
+
+/***** DICE *****/
+
+#dice {
+    width: 150px;
+    height: 150px;
+}
+
+/***** RULES *****/
+
+.ruleWin,
+.ruleLose {
+    width: 100px;
+    position: absolute;
+    left: -40%;
+    background-color: #7678ed;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    border: 1px dashed #f35b04;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    display: inline-block;
+}
+
+.ruleLose {
+    top: 30%;
+    left: -40%;
+}
