@@ -32,7 +32,7 @@ function roll() {
         score.innerHTML = sum
     }
 
-    if (sum > 30) {
+    if (sum > 25) {
         gameRst.textContent = "You won!"
         buttons()
     }
@@ -49,7 +49,7 @@ startBtt.addEventListener("click", () => {
     gameRst.textContent = "Score"
     score.textContent = sum
     buttons()
-    roll()
+    dice.src = ""
 })
 
 
